@@ -1,0 +1,22 @@
+<!-- app/views/pages/index.html.erb -->
+
+<h1>Characters List</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>House</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @pages.each do |page| %>
+      <tr>
+        <td><%= page.name %></td>
+        <td><%= page.location %></td>
+        <td><%= page.house %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
